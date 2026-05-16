@@ -42,8 +42,16 @@ public static class Arrays
         // be implemented by another person.
 
         ///<summary>
-        /// 
-        /// 
+        /// Create a for loop (repeat based on rotation)
+        /// Use a variable called 'number' to store the last value in the list.
+        /// RemoveAt removes the last value from the list,
+        /// and Insert takes that value and place it to the front of the list.
         /// </summary>
+        for (int i = 0; i < amount; i++)
+        {
+            int number = data [data.Count - 1];
+            data.RemoveAt(data.Count - 1);
+            data.Insert(0, number);           
+        }
     }
 }
