@@ -13,7 +13,18 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+        ///<summary>
+        /// Create and return an array of multiples of a number. The size of the array should match its length.
+        /// Use a for loop to go through each position in the array, beginning at index 0 until it is full.
+        /// Calculate the multiple for the current position and use (i + 1) to get the correct value of the first
+        /// number. Return the multiples. 
+        ///</summary>
+        double[] multiples = new double[length];
+        for (int i = 0; i < length; i++)
+        {
+            multiples[i] = number * (i + 1);
+        }
+        return multiples; // replace this return statement with your own
     }
 
     /// <summary>
@@ -29,5 +40,10 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
+
+        ///<summary>
+        /// 
+        /// 
+        /// </summary>
     }
 }
