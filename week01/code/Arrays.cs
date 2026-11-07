@@ -39,6 +39,14 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
-        //
+        
+        // Find the starting position of the numbers that need to move to the front.
+        // Get those and numbers and save them in a new list.
+        // Remove those numbers from the original list and
+        // insert the saved numbers at the beginning of the original list..
+        int start = data.Count - amount;
+        List<int> lastNumbers = data.GetRange(start, amount);
+        data.RemoveRange(start, amount);
+        data.InsertRange(0, lastNumbers);
     }
 }
